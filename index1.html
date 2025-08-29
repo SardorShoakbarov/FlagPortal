@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hints Portal</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #00ff00;
+      font-family: 'Courier New', monospace;
+      padding-top: 80px;
+    }
+    .btn-hack {
+      background-color: #222;
+      color: #00ff00;
+      border: 1px solid #00ff00;
+      margin: 5px;
+    }
+    .btn-hack:hover {
+      background-color: #00ff00;
+      color: #000;
+    }
+    h1 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .container-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hints Portal</h1>
+  <p class="text-center">Challengelar uchun hintlar (har birini ochish uchun parol kerak)</p>
+
+  <div class="container-buttons" id="buttons"></div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const buttonsContainer = document.getElementById("buttons");
+
+    // Har bir button uchun alohida hintlar
+    const hints = [
+      "Hint 1: Linuxda fayl huquqlari uchun chmod ishlatiladi.",
+      "Hint 2: Windowsda cmd yoki powershell ishlatiladi.",
+      "Hint 3: Linux shell turlari: bash, zsh, sh",
+      "Hint 4: Papkani o'chirish: Linux rm -r, Windows rmdir",
+      "Hint 5: Atrof-muhit o'zgaruvchilarini ko'rish: Linux env, Windows set",
+      "Hint 6: Echo buyrug'i ekranga yozish uchun ishlatiladi",
+      "Hint 7: Fayllarni batafsil ko'rish: ls -la",
+      "Hint 8: CPU haqida ma'lumot: cat /proc/cpuinfo",
+      "Hint 9: Tarmoq tekshirish: ping localhost",
+      "Hint 10: Jarayonlarni ko'rish: top"
+    ];
+
+    const hintPassword = "letmein"; // Hintni ko'rish uchun parol
+
+    // Har bir hint uchun button yaratish
+    hints.forEach((hint, index) => {
+      const btn = document.createElement("button");
+      btn.className = "btn btn-hack";
+      btn.textContent = `Hint ${index+1}`;
+
+      btn.addEventListener("click", () => {
+        const pass = prompt("Enter password to view this hint:");
+        if(pass === hintPassword){
+          alert(hint);
+        } else {
+          alert("❌ Wrong password!");
+        }
+      });
+
+      buttonsContainer.appendChild(btn);
+    });
+  </script>
+</body>
+</html>
