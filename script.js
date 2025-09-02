@@ -1,15 +1,4 @@
-    const correctFlags = {
-      1: "Bayroq{9K2x7PbQ4mT1VzLsF8Gw0RaYnJH5UeDOci}",
-      2: "Flug{a2Z9Xk31232B45dVq5RW3nLmPaZ9Xk2BdVqW3nLmP}",
-      3: "B4yroq{732cd7a58ce5589016208c397e912c2cS}",
-      4: "B4yr0q{Farosatli_Inson_flag_sohibi}",
-      5: "FLAG{here we go}",
-      6: "CTF{Challenge6 hidden_file_found}",
-      7: "FLAG{awdawdawd}",
-      8: "FLAG{my Juliet}",
-      9: "FLAG{MENMAN}",
-      10: "FLAG{BUMENMAN}"
-    };
+
 
     const challengeInfo = {
       1: { desc: "bash script ishga tushganda zshrc ga uzgartirish qoshiladi files papkasida commandlar ishlamaydi commandlar bilan birga flag turgan fileni comment qilib ketilgan", cmd: "nano ~/.zshrc qoshilgan commandlarni uchirib tashlash kerak " },
@@ -130,3 +119,75 @@ for (let i = 1; i <= 10; i++) {
 
     // Show previously solved challenges
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    const correctFlags = {
+      1: "Bayroq{9K2x7PbQ4mT1VzLsF8Gw0RaYnJH5UeDOci}",
+      2: "Flug{a2Z9Xk31232B45dVq5RW3nLmPaZ9Xk2BdVqW3nLmP}",
+      3: "B4yroq{732cd7a58ce5589016208c397e912c2cS}",
+      4: "B4yr0q{Farosatli_Inson_flag_sohibi}",
+      5: "FLAG{here we go}",
+      6: "CTF{Challenge6 hidden_file_found}",
+      7: "FLAG{awdawdawd}",
+      8: "FLAG{my Juliet}",
+      9: "FLAG{MENMAN}",
+      10: "FLAG{BUMENMAN}"
+    };
